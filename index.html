@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KiizUI — политика конфиденциальности</title>
+<style>
+  :root { color-scheme: light dark; --bg: #ffffff; --fg: #1b1a1f; --muted: #5d5a66; --line: #e4e2ea; --accent: #5236ff; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #0b0a10; --fg: #ecebf1; --muted: #a9a5b6; --line: #26232f; --accent: #a897ea; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
+  nav { display: flex; gap: 16px; margin-bottom: 32px; }
+  nav a { color: var(--accent); text-decoration: none; font-weight: 600; }
+  h1 { font-size: 28px; line-height: 1.25; margin: 0 0 8px; }
+  h2 { font-size: 18px; margin: 28px 0 8px; }
+  p, li { margin: 0 0 10px; }
+  ul { padding-left: 20px; }
+  .muted { color: var(--muted); }
+  section + section { border-top: 1px solid var(--line); margin-top: 48px; padding-top: 40px; }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="#ru">Русский</a><a href="#kk">Қазақша</a><a href="#en">English</a></nav>
+
+<section id="ru" lang="ru">
+  <h1>Политика конфиденциальности KiizUI</h1>
+  <p class="muted">Действует с 11 ноября 2026 года. Приложение: KiizUI (kz.kiizui.app) для Android.</p>
+
+  <h2>Коротко</h2>
+  <p>KiizUI не собирает, не хранит и не передаёт ваши данные. У приложения нет доступа в интернет. Всё, что оно видит на экране, обрабатывается только на телефоне и стирается, когда вы закрываете инспектор.</p>
+
+  <h2>Что приложение видит на экране</h2>
+  <p>Когда вы вызываете инспектор, KiizUI получает снимок экрана и структуру элементов приложения, открытого под ним: размеры, расположение, цвета, тексты, идентификаторы и шрифты. Это нужно, чтобы показать вам размеры, отступы, цвета и иерархию. KiizUI получает эти данные двумя способами:</p>
+  <ul>
+    <li>как цифровой помощник телефона (Assist API) — только в момент вызова;</li>
+    <li>через службу специальных возможностей (AccessibilityService) — чтобы видеть экраны на Flutter, Jetpack Compose и WebView, а на Android Go читать экран вообще. Служба читает экран только когда вы вызываете инспектор и ничего не нажимает за вас. Из системных событий она получает лишь смену окон, чтобы показать название текущего экрана.</li>
+  </ul>
+  <p>Снимок и структура экрана хранятся только в оперативной памяти, пока открыт инспектор. Они не записываются в файлы, не отправляются и не передаются третьим лицам.</p>
+
+  <h2>Что ещё использует приложение</h2>
+  <ul>
+    <li><b>Сведения об установленных приложениях.</b> Чтобы показать пакет, версию и SDK приложения, которое вы проверяете, KiizUI читает его данные в системе. Список ваших приложений никуда не уходит.</li>
+    <li><b>Буфер обмена.</b> Значение попадает в буфер только когда вы сами нажимаете «Копировать».</li>
+    <li><b>Удаление приложений.</b> Кнопка «Удалить» открывает системный запрос на удаление проверяемого приложения. Удаляет его только сама система и только после вашего подтверждения.</li>
+    <li><b>Настройки KiizUI.</b> Язык, единицы измерения, пройденные шаги настройки и способ вызова хранятся на телефоне и никуда не передаются.</li>
+  </ul>
+
+  <h2>Третьи лица</h2>
+  <p>В KiizUI нет рекламы, аналитики, сбора сбоев и других сторонних сервисов.</p>
+
+  <h2>Как выключить</h2>
+  <p>Службу можно выключить в настройках специальных возможностей. Чтобы KiizUI перестал быть помощником, откройте «Приложения → Приложения по умолчанию → Цифровой помощник». После удаления KiizUI на телефоне не остаётся ничего.</p>
+
+  <h2>Дети</h2>
+  <p>KiizUI — профессиональный инструмент и не предназначен для детей.</p>
+
+  <h2>Изменения и связь</h2>
+  <p>Если политика изменится, новая версия появится на этой странице с новой датой. Вопросы можно задать здесь: <a href="https://github.com/beksultanrrr/kiizui-privacy/issues">github.com/beksultanrrr/kiizui-privacy/issues</a>.</p>
+</section>
+
+<section id="kk" lang="kk">
+  <h1>KiizUI құпиялылық саясаты</h1>
+  <p class="muted">2026 жылғы 11 қарашадан бастап күшінде. Қолданба: Android-ке арналған KiizUI (kz.kiizui.app).</p>
+
+  <h2>Қысқаша</h2>
+  <p>KiizUI деректеріңізді жинамайды, сақтамайды және ешкімге бермейді. Қолданбаның интернетке қолжетімділігі жоқ. Экранда көргенінің бәрі тек телефонда өңделеді және инспекторды жапқанда өшіріледі.</p>
+
+  <h2>Қолданба экранда нені көреді</h2>
+  <p>Инспекторды шақырғанда KiizUI астында ашық тұрған қолданбаның скриншотын және элементтер құрылымын алады: өлшемдерін, орналасуын, түстерін, мәтіндерін, идентификаторларын және қаріптерін. Бұл сізге өлшемдерді, шегіністерді, түстерді және иерархияны көрсету үшін керек. KiizUI бұл деректерді екі жолмен алады:</p>
+  <ul>
+    <li>телефонның цифрлық ассистенті ретінде (Assist API) — тек шақырған сәтте;</li>
+    <li>арнайы мүмкіндіктер қызметі (AccessibilityService) арқылы — Flutter, Jetpack Compose және WebView экрандарын көру үшін, ал Android Go-да экранды мүлде оқу үшін. Қызмет экранды тек инспекторды шақырғанда оқиды және сіздің атыңыздан ештеңе баспайды. Жүйелік оқиғалардан ол тек терезенің ауысқанын біледі — ағымдағы экранның атауын көрсету үшін.</li>
+  </ul>
+  <p>Скриншот пен экран құрылымы инспектор ашық тұрғанда тек жедел жадта сақталады. Олар файлға жазылмайды, жіберілмейді және үшінші тұлғаларға берілмейді.</p>
+
+  <h2>Қолданба тағы нені пайдаланады</h2>
+  <ul>
+    <li><b>Орнатылған қолданбалар туралы мәлімет.</b> Тексеріп жатқан қолданбаның пакетін, нұсқасын және SDK-сын көрсету үшін KiizUI оның деректерін жүйеден оқиды. Қолданбаларыңыздың тізімі ешқайда кетпейді.</li>
+    <li><b>Алмасу буфері.</b> Мән буферге тек өзіңіз «Көшіру» басқанда түседі.</li>
+    <li><b>Қолданбаларды жою.</b> «Жою» түймесі тексерілетін қолданбаны жоюға жүйелік сұрауды ашады. Оны тек жүйенің өзі және тек сіз растағаннан кейін жояды.</li>
+    <li><b>KiizUI баптаулары.</b> Тіл, өлшем бірліктері, баптау қадамдары және шақыру тәсілі телефонда сақталады және ешқайда берілмейді.</li>
+  </ul>
+
+  <h2>Үшінші тұлғалар</h2>
+  <p>KiizUI-де жарнама, аналитика, ақауларды жинау және басқа бөгде қызметтер жоқ.</p>
+
+  <h2>Қалай өшіруге болады</h2>
+  <p>Қызметті арнайы мүмкіндіктер баптауларынан өшіруге болады. KiizUI ассистент болмауы үшін «Қолданбалар → Әдепкі қолданбалар → Цифрлық ассистент» бөлімін ашыңыз. KiizUI жойылғаннан кейін телефонда ештеңе қалмайды.</p>
+
+  <h2>Балалар</h2>
+  <p>KiizUI — кәсіби құрал, балаларға арналмаған.</p>
+
+  <h2>Өзгерістер және байланыс</h2>
+  <p>Саясат өзгерсе, жаңа нұсқасы осы бетте жаңа күнімен шығады. Сұрақтарды мына жерде қоюға болады: <a href="https://github.com/beksultanrrr/kiizui-privacy/issues">github.com/beksultanrrr/kiizui-privacy/issues</a>.</p>
+</section>
+
+<section id="en" lang="en">
+  <h1>KiizUI Privacy Policy</h1>
+  <p class="muted">Effective 11 November 2026. App: KiizUI (kz.kiizui.app) for Android.</p>
+
+  <h2>In short</h2>
+  <p>KiizUI does not collect, store or share your data. The app has no internet access. Everything it sees on the screen is processed only on your phone and erased when you close the inspector.</p>
+
+  <h2>What the app sees on the screen</h2>
+  <p>When you call the inspector, KiizUI receives a screenshot and the element structure of the app open beneath it: sizes, positions, colors, texts, ids and fonts. It needs them to show you sizes, spacing, colors and the hierarchy. KiizUI receives this data in two ways:</p>
+  <ul>
+    <li>as your phone's digital assistant app (Assist API), only at the moment you call it;</li>
+    <li>through its accessibility service (AccessibilityService), to see Flutter, Jetpack Compose and WebView screens, and on Android Go to read the screen at all. The service reads the screen only when you call the inspector and never taps anything for you. From system events it only learns about window changes, to show the name of the current screen.</li>
+  </ul>
+  <p>The screenshot and the screen structure are kept in memory only while the inspector is open. They are never written to files, sent anywhere or shared with third parties.</p>
+
+  <h2>What else the app uses</h2>
+  <ul>
+    <li><b>Installed app information.</b> To show the package, version and SDK of the app you inspect, KiizUI reads its details from the system. The list of your apps never leaves the phone.</li>
+    <li><b>Clipboard.</b> A value is copied only when you tap Copy.</li>
+    <li><b>Uninstalling apps.</b> The Uninstall button opens the system prompt to uninstall the inspected app. Only the system removes it, and only after you confirm.</li>
+    <li><b>KiizUI settings.</b> Language, units, setup progress and the way you call the app are stored on the phone and never shared.</li>
+  </ul>
+
+  <h2>Third parties</h2>
+  <p>KiizUI has no ads, analytics, crash reporting or other third-party services.</p>
+
+  <h2>How to turn it off</h2>
+  <p>You can turn the service off in the accessibility settings. To stop using KiizUI as your assistant, open Apps → Default apps → Digital assistant app. Once KiizUI is uninstalled, nothing of it remains on the phone.</p>
+
+  <h2>Children</h2>
+  <p>KiizUI is a professional tool and is not directed at children.</p>
+
+  <h2>Changes and contact</h2>
+  <p>If this policy changes, the new version will appear on this page with a new date. You can ask questions here: <a href="https://github.com/beksultanrrr/kiizui-privacy/issues">github.com/beksultanrrr/kiizui-privacy/issues</a>.</p>
+</section>
+</main>
+</body>
+</html>
